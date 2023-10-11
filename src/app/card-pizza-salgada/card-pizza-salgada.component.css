@@ -1,0 +1,39 @@
+.cardPizzaSalgada{
+    margin-top: 150px;
+    margin-bottom: -120px;
+    height: 340px;
+    width: 270px;
+    background-color: black;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 3px solid rgb(37, 37, 37);
+}
+
+.content{
+    display: flex;
+    gap: 25px;
+}
+
+.ImagemPizzaSalgada{
+    width: 100%;
+    height: 48%;
+    background-color: aliceblue;
+    border-bottom: 3px solid rgb(17, 17, 17);
+}
+
+.infoPizza{
+    height: 52%;
+    width: 100%;
+}
+
+.nomeDaPizza{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 26px;
+}
+
+.fotoPizza{
+    height: 100%;
+    width: 270px;
+}

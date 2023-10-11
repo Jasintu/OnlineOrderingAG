@@ -1,0 +1,19 @@
+.container{
+    height: 2000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+}
+
+.content{
+    height: 100%;
+    width: 85%;
+    background: linear-gradient(to bottom, #fec013, #f9a81b, #f79f21, #f8961b);
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    gap: 25px;
+}
