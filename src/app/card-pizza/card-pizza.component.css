@@ -31,10 +31,26 @@
     font-size: 26px;
 }
 
+.nomeDaPizzaFix{
+    color: white;
+    text-align: center;
+    margin-top: 8px;
+    font-size: 26px;
+}
+
 .ingredientes{
     color: white;
     text-align: center;
     margin-top: 15px;
+    font-size: 14px;
+    width: 220px;
+    margin-left: 15px;
+}
+
+.ingredientesFix{
+    color: white;
+    text-align: center;
+    margin-top: 7px;
     font-size: 14px;
     width: 220px;
     margin-left: 15px;
@@ -110,7 +126,7 @@
 }
 
 .flexFix{
-    margin-top: -15px;
+    margin-top: -14px;
     position: absolute;
     display: flex;
 }
