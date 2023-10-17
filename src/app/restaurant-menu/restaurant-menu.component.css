@@ -1,5 +1,5 @@
 .container{
-    height: 3000px;
+    height: 5000px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -16,4 +16,5 @@
     justify-self: center;
     justify-items: center;
     gap: 25px;
+    overflow: hidden;
 }

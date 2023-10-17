@@ -38,6 +38,20 @@
     font-size: 26px;
 }
 
+.nomeDaPizzaFixV2{
+    color: white;
+    text-align: center;
+    margin-top: 2px;
+    font-size: 25px;
+}
+
+.nomeDaPizzaFixV3{
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    font-size: 26px;
+}
+
 .ingredientes{
     color: white;
     text-align: center;
@@ -51,6 +65,15 @@
     color: white;
     text-align: center;
     margin-top: 7px;
+    font-size: 14px;
+    width: 220px;
+    margin-left: 15px;
+}
+
+.ingredientesFixV2{
+    color: white;
+    text-align: center;
+    margin-top: 0px;
     font-size: 14px;
     width: 220px;
     margin-left: 15px;
@@ -179,3 +202,23 @@
 
 /**/
 
+.logoPizza{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+}
+
+.logoPizza img{
+    margin-bottom: -95px;
+    width: 290px;
+    height: 100px;
+    margin-top: 100px;
+}
+
+.string{
+    border-radius: 5px;
+    width: 550px;
+    border-bottom: 7px solid black;
+    margin-bottom: -50px;
+}

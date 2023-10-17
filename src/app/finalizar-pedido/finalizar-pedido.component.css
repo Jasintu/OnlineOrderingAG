@@ -16,6 +16,7 @@
 
 #finalizeOrder:hover{
     scale: 1.1;
+    color: aliceblue;
 }
 
 .material-icons{
@@ -26,8 +27,3 @@
     left: 60%;
     transform: translate(-50%, -50%);
 }
-
-.material-icons:hover{
-    color: white;
-}
-
