@@ -8,6 +8,7 @@ import { FinalizarPedidoComponent } from './finalizar-pedido/finalizar-pedido.co
 import { RestaurantMenuComponent } from './restaurant-menu/restaurant-menu.component';
 import { CardPizzaSalgadaComponent } from './card-pizza-salgada/card-pizza-salgada.component';
 import { CardPizzaComponent } from './card-pizza/card-pizza.component';
+import { PizzasDocesComponent } from './pizzas-doces/pizzas-doces.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CardPizzaComponent } from './card-pizza/card-pizza.component';
     FinalizarPedidoComponent,
     RestaurantMenuComponent,
     CardPizzaSalgadaComponent,
-    CardPizzaComponent
+    CardPizzaComponent,
+    PizzasDocesComponent
   ],
   imports: [
     BrowserModule,
