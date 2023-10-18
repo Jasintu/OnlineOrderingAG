@@ -201,6 +201,12 @@
     display: flex;
 }
 
+.flexFixV2{
+    margin-top: 15px;
+    position: absolute;
+    display: flex;
+}
+
 .mais{
     padding-top: 9px;
     text-align: center;
