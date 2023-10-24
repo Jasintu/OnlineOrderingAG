@@ -27,3 +27,29 @@
     left: 60%;
     transform: translate(-50%, -50%);
 }
+
+.whiteBtn{
+    color: wheat;
+}
+
+#quantidade{
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    position: fixed;
+    top: 84.3%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    transition: 0.3s all;
+}
+
+#quantidade p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aliceblue;
+    font-size: 13px;
+}

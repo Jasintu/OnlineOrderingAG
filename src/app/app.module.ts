@@ -9,6 +9,10 @@ import { RestaurantMenuComponent } from './restaurant-menu/restaurant-menu.compo
 import { CardPizzaSalgadaComponent } from './card-pizza-salgada/card-pizza-salgada.component';
 import { CardPizzaComponent } from './card-pizza/card-pizza.component';
 import { PizzasDocesComponent } from './pizzas-doces/pizzas-doces.component';
+import { FritasComponent } from './fritas/fritas.component';
+import { CuscuzGourmetComponent } from './cuscuz-gourmet/cuscuz-gourmet.component';
+import { AdicionaisPizzaComponent } from './adicionais-pizza/adicionais-pizza.component';
+import { PagamentoComponent } from './pagamento/pagamento.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { PizzasDocesComponent } from './pizzas-doces/pizzas-doces.component';
     RestaurantMenuComponent,
     CardPizzaSalgadaComponent,
     CardPizzaComponent,
-    PizzasDocesComponent
+    PizzasDocesComponent,
+    FritasComponent,
+    CuscuzGourmetComponent,
+    AdicionaisPizzaComponent,
+    PagamentoComponent
   ],
   imports: [
     BrowserModule,
