@@ -196,7 +196,7 @@
 }
 
 .flexFix{
-    margin-top: -14px;
+    margin-top: 0px;
     position: absolute;
     display: flex;
 }

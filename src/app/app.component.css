@@ -1,0 +1,17 @@
+
+#finalizarPedido{
+    position: fixed;
+    z-index: 3;
+}
+
+#pagamento{
+    animation: into 0.3s infinite;
+}
+
+@keyframes into {
+    from{
+        scale: 1.1;
+    }to{
+        scale: 0.1;
+    }
+}

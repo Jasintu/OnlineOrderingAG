@@ -42,8 +42,8 @@
 }
 
 .ImagemBatata{
-    width: 130%;
-    height: 57%;
+    width: 100%;
+    height: 47%;
     background-color: aliceblue;
     border-bottom: 1px solid rgb(43, 42, 42);
 }
@@ -79,8 +79,8 @@
 .ingredientes{
     color: white;
     text-align: center;
-    margin-top: 15px;
-    font-size: 14px;
+    margin-top: 20px;
+    font-size: 16px;
     width: 220px;
     margin-left: 15px;
 }
@@ -88,8 +88,8 @@
 .ingredientesFix{
     color: white;
     text-align: center;
-    margin-top: 7px;
-    font-size: 14px;
+    margin-top: 15px;
+    font-size: 16px;
     width: 220px;
     margin-left: 15px;
 }
@@ -161,12 +161,13 @@
 }
 
 .flex{
-    margin-top: -20px;
+    position: absolute;
+    margin-top: px;
     display: flex;
 }
 
 .flexFix{
-    margin-top: -14px;
+    margin-top: -12px;
     position: absolute;
     display: flex;
 }

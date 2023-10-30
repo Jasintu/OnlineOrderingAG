@@ -1,3 +1,4 @@
 <app-menu></app-menu>
 <app-restaurant-menu></app-restaurant-menu>
-<app-finalizar-pedido></app-finalizar-pedido>
+<app-finalizar-pedido id="finalizarPedido" (click)="toggleBotao()"></app-finalizar-pedido>
+<app-pagamento id="pagamento" *ngIf="mostrarBotao"></app-pagamento>
