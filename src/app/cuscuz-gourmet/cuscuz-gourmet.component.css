@@ -26,3 +26,128 @@
     margin-bottom: 38px;
     border-radius: 5px;
 }
+
+.container{
+    display: flex;
+    margin-top: 30px;
+}
+
+.opcaoRecheio{
+    width: 200px;
+    height: 32px;
+    border-radius: 10px;
+    background-color: antiquewhite;
+    margin: 10px;
+    font-size: 19px;
+    text-align: center;
+    padding-top: 8px;
+    transition: 0.3s ease;
+}
+
+.opcaoRecheio:hover{
+    scale: 1.05;
+    cursor: pointer;
+    background-color: gray;
+}
+
+.cuscuz{
+    width: 270px;
+    height: 400px;
+    background-color: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cuscuz img{
+    height: 230px;
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+}
+
+.adicionarCuscuz{
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    margin-left: 35px;
+    background-color: black;
+    border: 1px solid white;
+    color: aliceblue;
+    font-size: 18px;
+    transition: 0.5s ease;
+}
+
+.adicionarCuscuz:hover{
+    scale: 1.1;
+    cursor: pointer
+}
+
+@import '~material-icons/iconfont/material-icons.css';
+
+.material-icons{
+    font-size: 18px;
+    margin-left: 5px;
+    position: absolute;
+}
+
+.alerta{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 16px;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.stringV2{
+    border-bottom: 1px solid white;
+}
+
+.content{
+    margin-top: 30px;
+}
+
+.recheioP{
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.tittle{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+}
+
+.tittle p{
+    font-size: 24px;
+    color: aliceblue;
+}
+
+.preço{
+    z-index: 2;
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    background-color: black;
+    border: 1px solid white;
+    margin-top: -225px;
+    margin-left: 200px;
+    border-radius: 50%;
+    color: aliceblue;
+    font-size: 18px;
+    padding-top: 15px;
+    text-align: center;
+}
