@@ -7,16 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./cuscuz-gourmet.component.css']
 })
 export class CuscuzGourmetComponent{
+  x: number = 1;
   pegarValor(valor: string) {
-    let x:number = 0
-
-    if(x === 0){
-      let recheio1:string = valor
-      x = 1
+    let recheio1 = ""
+    let recheio2 = ""
+    if(this.x === 1){
+      this.x = 2
+      recheio1 = valor
       console.log("este é o valor 1", recheio1)
-    }else if(x === 1){
-      let recheio2:string = valor
-      x = 0
+    }else{
+      this.x = 1
+      recheio2 = valor
       console.log("este é o valor 2", recheio2)
     }
   }
