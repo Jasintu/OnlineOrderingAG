@@ -21,10 +21,13 @@
         <div class="flex">
             <p class="recheioP">RECHEIOS</p>
         </div>
+        <div class="alertaV2">
+            <p>Selecione 2 recheios para acompanhar</p>
+        </div>
         <div class="flex">
-            <p class="opcaoRecheio">Calabresa</p>
-            <p class="opcaoRecheio">Carne de Sol +4</p>
-            <p class="opcaoRecheio">Catupiry</p>
+            <p class="opcaoRecheio" (click)="pegarValor('Calabresa')">Calabresa</p>
+            <p class="opcaoRecheio" (click)="pegarValor('Carne de Sol')">Carne de Sol +4</p>
+            <p class="opcaoRecheio" (click)="pegarValor('Catupiry')">Catupiry</p>
         </div>
         <div class="flex">
             <p class="opcaoRecheio">Charque +4</p>
