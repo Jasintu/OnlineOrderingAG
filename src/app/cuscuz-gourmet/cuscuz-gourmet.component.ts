@@ -14,11 +14,9 @@ export class CuscuzGourmetComponent{
     if(this.x === 1){
       this.x = 2
       recheio1 = valor
-      console.log("este é o valor 1", recheio1)
     }else{
       this.x = 1
       recheio2 = valor
-      console.log("este é o valor 2", recheio2)
     }
   }
 }
