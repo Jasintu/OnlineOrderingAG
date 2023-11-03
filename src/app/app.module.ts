@@ -13,6 +13,7 @@ import { FritasComponent } from './fritas/fritas.component';
 import { CuscuzGourmetComponent } from './cuscuz-gourmet/cuscuz-gourmet.component';
 import { AdicionaisPizzaComponent } from './adicionais-pizza/adicionais-pizza.component';
 import { PagamentoComponent } from './pagamento/pagamento.component';
+import { TapiocasComponent } from './tapiocas/tapiocas.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PagamentoComponent } from './pagamento/pagamento.component';
     FritasComponent,
     CuscuzGourmetComponent,
     AdicionaisPizzaComponent,
-    PagamentoComponent
+    PagamentoComponent,
+    TapiocasComponent
   ],
   imports: [
     BrowserModule,

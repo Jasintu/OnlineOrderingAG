@@ -6,6 +6,15 @@
     gap: 25px;
 }
 
+.containerV2{
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+    gap: 25px;
+    margin-right: -130px;
+}
+
 .logoCuscuz{
     display: flex;
     justify-content: center;
@@ -76,7 +85,7 @@
 }
 
 .adicionais{
-    margin-left: 30px;
+    margin-left: -100px;
     display: flex;
 }
 
@@ -200,6 +209,15 @@
     margin-top: 10px;
 }
 
+.AdicionaisP{
+    font-size: 38px;
+    border-bottom: 2px solid black;
+    margin-bottom: 15px;
+    left: -50px;
+    margin-top: 10px;
+    position: relative;
+}
+
 .stringV2{
     border-bottom: 1px solid white;
 }
@@ -250,4 +268,8 @@
 .containerAdicionais{
     margin-right: 10px;
     font-size: 25px;
+}
+
+.cardPrincipal{
+    margin-right: -30px;
 }
