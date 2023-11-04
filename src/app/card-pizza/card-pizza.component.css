@@ -192,6 +192,7 @@
     width: 30px;
     border-radius:  5px 0px 0px 5px;
     transition: 0.2s ease;
+    user-select: none;
 }
 
 .menos{
@@ -204,6 +205,7 @@
     height: 26px;
     width: 30px;
     border-radius:  0px 5px 5px 0px;
+    user-select: none;
 }
 
 .quantas{
@@ -224,7 +226,12 @@
 .material-icons{
     font-size: 18px;
     margin-left: 5px;
-    margin-top: px;
+    position: absolute;
+}
+
+.add-icon{
+    font-size: 18px;
+    margin-left: -8px;
     position: absolute;
 }
 
