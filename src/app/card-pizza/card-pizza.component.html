@@ -61,7 +61,7 @@
                     <div class="quantidadeContent">
                         <div class="mais" (click)="adicionarMussache()">+</div>
                         <div class="quantas">{{quantidadeMussache}}</div>
-                        <div class="menos" (click)="adicionarMussache()">-</div>
+                        <div class="menos" (click)="removerMussache()">-</div>
                     </div>
                 </div>
             </div>
@@ -76,13 +76,13 @@
             <p class="nomeDaPizza">Milho</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, milho e orégano.</p>
             <div class="flex">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Milho', quantidadeMilho, 23)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarMilho()">+</div>
+                        <div class="quantas">{{quantidadeMilho}}</div>
+                        <div class="menos" (click)="removerMilho()">-</div>
                     </div>
                 </div>
             </div>
@@ -99,13 +99,13 @@
             <p class="nomeDaPizza">Mussarela</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela e orégano.</p>
             <div class="flex">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Mussarela', quantidadeMussarela, 26)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarMussarela()">+</div>
+                        <div class="quantas">{{quantidadeMussarela}}</div>
+                        <div class="menos" (click)="removerMussarela()">-</div>
                     </div>
                 </div>
             </div>
@@ -120,13 +120,13 @@
             <p class="nomeDaPizza">Napolitana</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, presunto, tomate e orégano.</p>
             <div class="flex">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Napolitana', quantidadeNapolitana, 26)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarNapolitana()">+</div>
+                        <div class="quantas">{{quantidadeNapolitana}}</div>
+                        <div class="menos" (click)="removerNapolitana()">-</div>
                     </div>
                 </div>
             </div>
@@ -141,13 +141,13 @@
             <p class="nomeDaPizza">Três Queijos</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, catupity e orégano.</p>
             <div class="flex">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Três Queijos', quantidadeTresQueijos, 26)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarTresQueijos()">+</div>
+                        <div class="quantas">{{quantidadeTresQueijos}}</div>
+                        <div class="menos" (click)="removerTresQueijos()">-</div>
                     </div>
                 </div>
             </div>
@@ -162,13 +162,13 @@
             <p class="nomeDaPizza">Presunto</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, presunto e orégano.</p>
             <div class="flex">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Presunto', quantidadePresunto, 26)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarPresunto()">+</div>
+                        <div class="quantas">{{quantidadePresunto}}</div>
+                        <div class="menos" (click)="removerPresunto()">-</div>
                     </div>
                 </div>
             </div>
@@ -185,13 +185,13 @@
             <p class="nomeDaPizza">Mista</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, calabresa, presunto moido e orégano.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Mista', quantidadeMista, 28)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarMista()">+</div>
+                        <div class="quantas">{{quantidadeMista}}</div>
+                        <div class="menos" (click)="removerMista()">-</div>
                     </div>
                 </div>
             </div>
@@ -206,13 +206,13 @@
             <p class="nomeDaPizza">Calabresa</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, calabresa, cebola e orégano.</p>
             <div class="flex">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Calabresa', quantidadeCalabresa, 28)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarCalabresa()">+</div>
+                        <div class="quantas">{{quantidadeCalabresa}}</div>
+                        <div class="menos" (click)="removerCalabresa()">-</div>
                     </div>
                 </div>
             </div>
@@ -227,13 +227,13 @@
             <p class="nomeDaPizza">Frango</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, frango e orégano.</p>
             <div class="flex">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Frango', quantidadeFrango, 30)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarFrango()">+</div>
+                        <div class="quantas">{{quantidadeFrango}}</div>
+                        <div class="menos" (click)="removerFrango()">-</div>
                     </div>
                 </div>
             </div>
@@ -248,13 +248,13 @@
             <p class="nomeDaPizza">Frango c/ Catupity</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, frango, catupiry e orégano.</p>
             <div class="flex">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Frango c/ Catupity', quantidadeFrangoCatupity, 30)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarFrangoCatupity()">+</div>
+                        <div class="quantas">{{quantidadeFrangoCatupity}}</div>
+                        <div class="menos" (click)="removerFrangoCatupity()">-</div>
                     </div>
                 </div>
             </div>
@@ -271,13 +271,13 @@
             <p class="nomeDaPizza">Francheddar</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, frango, cheddar e orégano.</p>
             <div class="flex">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Francheddar', quantidadeFrancheddar, 30)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarFrancheddar()">+</div>
+                        <div class="quantas">{{quantidadeFrancheddar}}</div>
+                        <div class="menos" (click)="removerFrancheddar()">-</div>
                     </div>
                 </div>
             </div>
@@ -292,13 +292,13 @@
             <p class="nomeDaPizza">Quero Mais</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, calabresa e presunto moido, catupiry e orégano.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Quero Mais', quantidadeQueroMais, 30)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarQueroMais()">+</div>
+                        <div class="quantas">{{quantidadeQueroMais}}</div>
+                        <div class="menos" (click)="removerQueroMais()">-</div>
                     </div>
                 </div>
             </div>
@@ -313,13 +313,13 @@
             <p class="nomeDaPizza">Bolonhesa</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, carne moIda, azeitona e orégano.</p>
             <div class="flex">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Bolonhesa', quantidadeBolonhesa, 30)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarBolonhesa()">+</div>
+                        <div class="quantas">{{quantidadeBolonhesa}}</div>
+                        <div class="menos" (click)="removerBolonhesa()">-</div>
                     </div>
                 </div>
             </div>
@@ -334,13 +334,13 @@
             <p class="nomeDaPizza">Lombo Canadense</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, lombo canadense fatiado, azeitona e orégano.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Lombo Canadense', quantidadeLomboCanadense, 30)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarLomboCanadense()">+</div>
+                        <div class="quantas">{{quantidadeLomboCanadense}}</div>
+                        <div class="menos" (click)="removerLomboCanadense()">-</div>
                     </div>
                 </div>
             </div>
@@ -357,13 +357,13 @@
             <p class="nomeDaPizza">Portuguesa</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, calabresa, ovo, cebola, milho, azeitona e orégano.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Portuguesa', quantidadePortuguesa, 30)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarPortuguesa()">+</div>
+                        <div class="quantas">{{quantidadePortuguesa}}</div>
+                        <div class="menos" (click)="removerPortuguesa()">-</div>
                     </div>
                 </div>
             </div>
@@ -378,13 +378,13 @@
             <p class="nomeDaPizza">Dom Costela</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, lombo suíno, cebola, molho barbecue e orégano.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Dom Costela', quantidadeDomCostela, 32)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarDomCostela()">+</div>
+                        <div class="quantas">{{quantidadeDomCostela}}</div>
+                        <div class="menos" (click)="removerDomCostela()">-</div>
                     </div>
                 </div>
             </div>
@@ -399,13 +399,13 @@
             <p class="nomeDaPizza">Dom Grega</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, frango, milho, passas, azeitona e orégano.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Dom Grega', quantidadeDomGrega, 32)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarDomGrega()">+</div>
+                        <div class="quantas">{{quantidadeDomGrega}}</div>
+                        <div class="menos" (click)="removerDomGrega()">-</div>
                     </div>
                 </div>
             </div>
@@ -420,13 +420,13 @@
             <p class="nomeDaPizza">Quatro Queijos</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, queijo coalho em cubos, catupiry, cheddar e orégano.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Quatro Queijos', quantidadeQuatroQueijos, 32)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarQuatroQueijos()">+</div>
+                        <div class="quantas">{{quantidadeQuatroQueijos}}</div>
+                        <div class="menos" (click)="removerQuatroQueijos()">-</div>
                     </div>
                 </div>
             </div>
@@ -443,13 +443,13 @@
             <p class="nomeDaPizzaFix">Lombo a 4 Queijos</p>
             <p class="ingredientesFix">Molho de pizza, queijo muçarela, lombo canadense, catupiry, cheddar, queijo coalho em cubos e orégano.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Lombo a 4 Queijos', quantidadeLomboQueijos, 35)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarLomboQueijos()">+</div>
+                        <div class="quantas">{{quantidadeLomboQueijos}}</div>
+                        <div class="menos" (click)="removerLomboQueijos()">-</div>
                     </div>
                 </div>
             </div>
@@ -464,13 +464,13 @@
             <p class="nomeDaPizzaFix">Calabresa ao Barbecue</p>
             <p class="ingredientesFix">Molho barbecue, queijo muçarela, calabresa ao barbecue e orégano.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Calabresa ao Barbecue', quantidadeCalabresaBarbecue, 35)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarCalabresaBarbecue()">+</div>
+                        <div class="quantas">{{quantidadeCalabresaBarbecue}}</div>
+                        <div class="menos" (click)="removerCalabresaBarbecue()">-</div>
                     </div>
                 </div>
             </div>
@@ -485,13 +485,13 @@
             <p class="nomeDaPizza">Frango ao Barbecue</p>
             <p class="ingredientes">Molho barbecue, queijo muçarela, frango ao barbecue e orégano.</p>
             <div class="flex">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Frango ao Barbecue', quantidadeFrangoBarbecue, 35)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarFrangoBarbecue()">+</div>
+                        <div class="quantas">{{quantidadeFrangoBarbecue}}</div>
+                        <div class="menos" (click)="removerFrangoBarbecue()">-</div>
                     </div>
                 </div>
             </div>
@@ -506,13 +506,13 @@
             <p class="nomeDaPizza">03 Queijo Especial</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, queijo coalho em cubos, catupiry, cheddar e orégano.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('03 Queijo Especial', quantidade3Queijos, 35)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionar3Queijos()">+</div>
+                        <div class="quantas">{{quantidade3Queijos}}</div>
+                        <div class="menos" (click)="remover3Queijos()">-</div>
                     </div>
                 </div>
             </div>
@@ -529,13 +529,13 @@
             <p class="nomeDaPizza">Calafrita</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, calabresa fatiada e batata frita.</p>
             <div class="flex">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Calafrita', quantidadeCalafrita, 38)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarCalafrita()">+</div>
+                        <div class="quantas">{{quantidadeCalafrita}}</div>
+                        <div class="menos" (click)="removerCalafrita()">-</div>
                     </div>
                 </div>
             </div>
@@ -550,13 +550,13 @@
             <p class="nomeDaPizza">Agrestina</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, carne de sol, cebola, azeitona e orégano.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Agrestina', quantidadeAgrestina, 38)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarAgrestina()">+</div>
+                        <div class="quantas">{{quantidadeAgrestina}}</div>
+                        <div class="menos" (click)="removerAgrestina()">-</div>
                     </div>
                 </div>
             </div>
@@ -571,13 +571,13 @@
             <p class="nomeDaPizza">Matuta</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, charque, calabresa, queijo coalho em cubos e orégano.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Matuta', quantidadeMatuta, 38)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarMatuta()">+</div>
+                        <div class="quantas">{{quantidadeMatuta}}</div>
+                        <div class="menos" (click)="removerMatuta()">-</div>
                     </div>
                 </div>
             </div>
@@ -585,20 +585,20 @@
     </div>
     <div class="cardPizzaSalgada">
         <div class="ImagemPizzaSalgada">
-            <div class="preço">32$</div>
+            <div class="preço">38$</div>
             <img src="https://instadelivery-public.nyc3.cdn.digitaloceanspaces.com/itens/164305582461ef0ad02480b_75_75.jpeg" alt="" class="fotoPizza">
         </div>
         <div class="infoPizza">
             <p class="nomeDaPizza">Fritache</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, batata frita, cheddar, queijo parmesão ralado e orégano.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Fritache', quantidadeFritache, 38)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarFritache()">+</div>
+                        <div class="quantas">{{quantidadeFritache}}</div>
+                        <div class="menos" (click)="removerFritache()">-</div>
                     </div>
                 </div>
             </div>
@@ -615,13 +615,13 @@
             <p class="nomeDaPizzaFixV2">Carne de Sol ao Barbecue</p>
             <p class="ingredientesFixV2">Molho barbecue, queijo muçarela, carne de sol ao barbecue, azeitona e orégano.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Carne de Sol ao Barbecue', quantidadeCarneSolBarbecue, 40)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarCarneSolBarbecue()">+</div>
+                        <div class="quantas">{{quantidadeCarneSolBarbecue}}</div>
+                        <div class="menos" (click)="removerCarneSolBarbecue()">-</div>
                     </div>
                 </div>
             </div>
@@ -636,13 +636,13 @@
             <p class="nomeDaPizzaFixV3">Charque ao Barbecue</p>
             <p class="ingredientesFixV2">Molho de pizza, queijo muçarela, carne de sol, cebola, azeitona e orégano.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Charque ao Barbecue', quantidadeCharqueBarbecue, 40)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarCharqueBarbecue()">+</div>
+                        <div class="quantas">{{quantidadeCharqueBarbecue}}</div>
+                        <div class="menos" (click)="removerCharqueBarbecue()">-</div>
                     </div>
                 </div>
             </div>
@@ -657,13 +657,13 @@
             <p class="nomeDaPizzaFixV3">Calabacon ao Barbecue</p>
             <p class="ingredientesFixV2">Molho barbecue, queijo muçarela, calabresa, bacon ao barbecue e orégano.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizza('Calabacon ao Barbecue', quantidadeCalabaconBarbecue, 40)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarCalabaconBarbecue()">+</div>
+                        <div class="quantas">{{quantidadeCalabaconBarbecue}}</div>
+                        <div class="menos" (click)="removerCalabaconBarbecue()">-</div>
                     </div>
                 </div>
             </div>
@@ -678,13 +678,13 @@
             <p class="nomeDaPizza">Solfrita</p>
             <p class="ingredientes">Molho de pizza, queijo muçarela, carne de sol e batata frita.</p>
             <div class="flex">
-                <button class="adicionarV2">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionarV2" (click)="pegarInfoPizza('Solfrita', quantidadeSolfrita, 40)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidadeV2">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarSolfrita()">+</div>
+                        <div class="quantas">{{quantidadeSolfrita}}</div>
+                        <div class="menos" (click)="removerSolfrita()">-</div>
                     </div>
                 </div>
             </div>
