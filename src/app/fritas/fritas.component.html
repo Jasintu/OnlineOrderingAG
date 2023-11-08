@@ -14,13 +14,13 @@
                 <p class="tamanhoFrita">Média</p>
                 <p class="ingredientes">Batata frita tradicional</p>
                 <div class="flex">
-                    <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                    <button class="adicionar" (click)="pegarInfoFritas('Batata Média', quantidadeMediaNormal, 13)">Adicionar<i class="material-icons">shopping_cart</i>
                     </button>
                     <div class="quantidade">
                         <div class="quantidadeContent">
-                            <div class="mais">+</div>
-                            <div class="quantas">1</div>
-                            <div class="menos">-</div>
+                            <div class="mais" (click)="adicionarMediaNormal()">+</div>
+                            <div class="quantas">{{quantidadeMediaNormal}}</div>
+                            <div class="menos" (click)="removerMediaNormal()">-</div>
                         </div>
                     </div>
                 </div>
@@ -37,13 +37,13 @@
                 <p class="tamanhoFrita">Grande</p>
                 <p class="ingredientes">Batata frita tradicional</p>
                 <div class="flex">
-                    <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                    <button class="adicionar" (click)="pegarInfoFritas('Batata Grande', quantidadeGrandeNormal, 16)">Adicionar<i class="material-icons">shopping_cart</i>
                     </button>
                     <div class="quantidade">
                         <div class="quantidadeContent">
-                            <div class="mais">+</div>
-                            <div class="quantas">1</div>
-                            <div class="menos">-</div>
+                            <div class="mais" (click)="adicionarGrandeNormal()">+</div>
+                            <div class="quantas">{{quantidadeGrandeNormal}}</div>
+                            <div class="menos" (click)="removerGrandeNormal()">-</div>
                         </div>
                     </div>
                 </div>
@@ -60,12 +60,12 @@
                 <p class="tamanhoFrita">Média</p>
                 <p class="ingredientesFix">Batata frita, calabresa e cheddar</p>
                 <div class="flexFix">
-                    <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i></button>
+                    <button class="adicionar" (click)="pegarInfoFritas('Batata Gourmet, Média', quantidadeMediaGourmet, 16)">Adicionar<i class="material-icons">shopping_cart</i></button>
                     <div class="quantidade">
                         <div class="quantidadeContent">
-                            <div class="mais">+</div>
-                            <div class="quantas">1</div>
-                            <div class="menos">-</div>
+                            <div class="mais" (click)="adicionarMediaGourmet()">+</div>
+                            <div class="quantas">{{quantidadeMediaGourmet}}</div>
+                            <div class="menos" (click)="removerMediaGourmet()">-</div>
                         </div>
                     </div>
                 </div>
@@ -82,12 +82,12 @@
                 <p class="tamanhoFrita">Grande</p>
                 <p class="ingredientesFix">Batata frita, calabresa e cheddar</p>
                 <div class="flexFix">
-                    <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i></button>
+                    <button class="adicionar" (click)="pegarInfoFritas('Batata Gourmet, Grande', quantidadeGrandeGourmet, 18)">Adicionar<i class="material-icons">shopping_cart</i></button>
                     <div class="quantidade">
                         <div class="quantidadeContent">
-                            <div class="mais">+</div>
-                            <div class="quantas">1</div>
-                            <div class="menos">-</div>
+                            <div class="mais" (click)="adicionarGrandeGourmet()">+</div>
+                            <div class="quantas">{{quantidadeGrandeGourmet}}</div>
+                            <div class="menos" (click)="removerGrandeGourmet()">-</div>
                         </div>
                     </div>
                 </div>

@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-pizza.component.css']
 })
 export class CardPizzaComponent {
-  pizzasComputadas:Array <string | number> = [
-
-  ]
+  pizzasComputadasNome:Array <string | number> = []
+  pizzasComputadasQuantidade:Array <string | number> = []
+  pizzasComputadasPreco:Array <string | number> = []
   quantidadeMargherita:number = 1
   quantidadeDoisQueijos:number = 1
   quantidadeMussache:number = 1
@@ -43,10 +43,12 @@ export class CardPizzaComponent {
   quantidadeSolfrita:number = 1
   //margherita
   pegarInfoPizza(nomePedido: string, quantidade:number, custo:number){
-    console.log(nomePedido, quantidade, custo)
-    this.pizzasComputadas.push(nomePedido, quantidade, custo)
-    console.log(this.pizzasComputadas)
+    this.pizzasComputadasNome.push(nomePedido)
+    this.pizzasComputadasQuantidade.push(quantidade)
+    this.pizzasComputadasPreco.push(custo)
   }
+  //***********************/
+  //Margherita
   adicionarMargherita(){
     this.quantidadeMargherita = ++this.quantidadeMargherita
   }
