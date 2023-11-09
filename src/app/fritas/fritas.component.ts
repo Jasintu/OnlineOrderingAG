@@ -18,6 +18,9 @@ export class FritasComponent {
     this.fritasComputadasNome.push(nomePedido)
     this.fritasComputadasQuantidade.push(quantidade)
     this.fritasComputadasPreco.push(custo)
+    console.log(this.fritasComputadasNome);
+    console.log(this.fritasComputadasPreco);
+    console.log(this.fritasComputadasQuantidade);
   }
 
   //********** Normal Média

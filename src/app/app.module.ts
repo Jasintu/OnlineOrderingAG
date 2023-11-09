@@ -14,6 +14,8 @@ import { CuscuzGourmetComponent } from './cuscuz-gourmet/cuscuz-gourmet.componen
 import { AdicionaisPizzaComponent } from './adicionais-pizza/adicionais-pizza.component';
 import { PagamentoComponent } from './pagamento/pagamento.component';
 import { TapiocasComponent } from './tapiocas/tapiocas.component';
+import { FormsModule } from '@angular/forms';
+import { PedidosCompartilhamentoComponent } from './pedidos-compartilhamento/pedidos-compartilhamento.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +30,17 @@ import { TapiocasComponent } from './tapiocas/tapiocas.component';
     CuscuzGourmetComponent,
     AdicionaisPizzaComponent,
     PagamentoComponent,
-    TapiocasComponent
+    TapiocasComponent,
+    PedidosCompartilhamentoComponent
+  ],
+  exports:[
+    PagamentoComponent,
+    PedidosCompartilhamentoComponent 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

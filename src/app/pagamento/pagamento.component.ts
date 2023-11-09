@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-pagamento',
@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 
 
 export class PagamentoComponent {
+  contador:Array <number> = [2, 3, 4, 5]
   opcaoPix(){
     let pix = document.querySelector("#pix") as HTMLElement
     let cartao = document.querySelector("#cartao") as HTMLElement
@@ -44,4 +45,8 @@ export class PagamentoComponent {
       pix.style.backgroundColor = "white"
     }
   }
+  //************** Receber Informações de pedidos
+  //@Input() fritasComputadasNome:Array <string | number> = []
+  //@Input() fritasComputadasQuantidade:Array <string | number> = []
+  //@Input() fritasComputadasPreco:Array <string | number> = []
 }
