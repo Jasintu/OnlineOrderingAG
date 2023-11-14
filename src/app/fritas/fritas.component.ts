@@ -5,7 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './fritas.component.html',
   styleUrls: ['./fritas.component.css']
 })
-export class FritasComponent {
+export class FritasComponent{
+
   fritasComputadasNome:Array <string | number> = []
   fritasComputadasQuantidade:Array <string | number> = []
   fritasComputadasPreco:Array <string | number> = []
@@ -18,9 +19,6 @@ export class FritasComponent {
     this.fritasComputadasNome.push(nomePedido)
     this.fritasComputadasQuantidade.push(quantidade)
     this.fritasComputadasPreco.push(custo)
-    console.log(this.fritasComputadasNome);
-    console.log(this.fritasComputadasPreco);
-    console.log(this.fritasComputadasQuantidade);
   }
 
   //********** Normal Média

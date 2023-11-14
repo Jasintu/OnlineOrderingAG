@@ -1,4 +1,4 @@
 <app-menu></app-menu>
 <app-restaurant-menu></app-restaurant-menu>
-<app-finalizar-pedido id="finalizarPedido" (click)="toggleBotao()"></app-finalizar-pedido>
-<app-pagamento id="pagamento" *ngIf="mostrarBotao"></app-pagamento>
+<app-finalizar-pedido id="finalizarPedido" (click)="toggleContent()"></app-finalizar-pedido>
+<app-compartilhar-informacao-pedido [ngClass]="{'conteudo-2': mostrarConteudo === 1, 'conteudo-1': mostrarConteudo === 2}"></app-compartilhar-informacao-pedido>

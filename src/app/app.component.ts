@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  mostrarBotao = false
-  toggleBotao() {
-    this.mostrarBotao = !this.mostrarBotao
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
+  mostrarConteudo: number = 1;
+  toggleContent() {
+    this.mostrarConteudo = this.mostrarConteudo === 1 ? 2 : 1;
   }
 }

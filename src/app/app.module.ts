@@ -12,10 +12,9 @@ import { PizzasDocesComponent } from './pizzas-doces/pizzas-doces.component';
 import { FritasComponent } from './fritas/fritas.component';
 import { CuscuzGourmetComponent } from './cuscuz-gourmet/cuscuz-gourmet.component';
 import { AdicionaisPizzaComponent } from './adicionais-pizza/adicionais-pizza.component';
-import { PagamentoComponent } from './pagamento/pagamento.component';
 import { TapiocasComponent } from './tapiocas/tapiocas.component';
 import { FormsModule } from '@angular/forms';
-import { PedidosCompartilhamentoComponent } from './pedidos-compartilhamento/pedidos-compartilhamento.component';
+import { CompartilharInformacaoPedidoComponent } from './compartilhar-informacao-pedido/compartilhar-informacao-pedido.component';
 
 @NgModule({
   declarations: [
@@ -29,13 +28,14 @@ import { PedidosCompartilhamentoComponent } from './pedidos-compartilhamento/ped
     FritasComponent,
     CuscuzGourmetComponent,
     AdicionaisPizzaComponent,
-    PagamentoComponent,
     TapiocasComponent,
-    PedidosCompartilhamentoComponent
+    CompartilharInformacaoPedidoComponent,
   ],
   exports:[
-    PagamentoComponent,
-    PedidosCompartilhamentoComponent 
+    FritasComponent,
+    PizzasDocesComponent,
+    CompartilharInformacaoPedidoComponent,
+    CardPizzaComponent,
   ],
   imports: [
     BrowserModule,

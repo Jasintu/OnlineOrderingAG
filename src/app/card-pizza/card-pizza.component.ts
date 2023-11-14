@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-pizza.component.css']
 })
 export class CardPizzaComponent {
-  pizzasComputadasNome:Array <string | number> = []
+  pizzasComputadasNome:Array <string> = []
   pizzasComputadasQuantidade:Array <string | number> = []
   pizzasComputadasPreco:Array <string | number> = []
   quantidadeMargherita:number = 1
