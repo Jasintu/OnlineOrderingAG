@@ -1,24 +1,24 @@
 <div class="container">
     <div class="content">
         <div class="listaPedidos">
-            <div class="pedidos"><div class="preço">23R$</div><p class="nomePedido">Margherita 1X</p><i class="material-icons">delete</i></div>
-            <div class="pedidos"><div class="preço">13R$</div><p class="nomePedido">Batata Média 1X</p><i class="material-icons">delete</i></div>
-            <div class="pedidos"><div class="preço">26R$</div><p class="nomePedido">Mussarela 1X</p><i class="material-icons">delete</i></div>
-            <div class="pedidos"><div class="preço">23R$</div><p class="nomePedido">Banana 1X</p><i class="material-icons">delete</i></div>
-            <div class="pedidos"><div class="preço">30R$</div><p class="nomePedido">Kit & Kat 1X</p><i class="material-icons">delete</i></div>
+            <div class="pedidos"  *ngFor="let pizza of PizzaRecebidaPreco">
+                <div class="preço">{{PizzaRecebidaPreco}}R$</div>
+                <p class="nomePedido"> pizza 1X</p>
+                <i class="material-icons">delete</i>
+            </div>
         </div>
         <div class="pedidoTotal">
-            <p class="total">Total: {{valorFinalPedido}},00 R$</p>
+            <p class="total">{{valorFinalPedido}}</p>
         </div>
         <div class="formasDePagamento">
             <div class="formas" id="pix" (click)="opcaoPix()" [ngStyle]="{'background-color': minhaCorPix}">
-                <img src="assets/logos/pix_icon_198027.png" alt="">
+                <img src="assets/logos/pix_icon_198027.png" alt=""  draggable="false" >
             </div>
             <div class="formas" id="cartao" (click)="opcaoCartao()" [ngStyle]="{'background-color': minhaCorCartao}">
-                <img src="assets/logos/cartaodecredito_icon.png" alt="" id="cartaov2">
+                <img src="assets/logos/cartaodecredito_icon.png" alt="" id="cartaov2"  draggable="false">
             </div>
             <div class="formas" id="dinheiro" (click)="opcaoDinheiro()" [ngStyle]="{'background-color': minhaCorDinheiro}">
-                <img src="assets/logos/png-transparent-computer-icons-bank-money-bank-saving-text-hand-removebg-preview.png" alt="" id="dinheirov2">
+                <img src="assets/logos/png-transparent-computer-icons-bank-money-bank-saving-text-hand-removebg-preview.png" alt="" id="dinheirov2"  draggable="false">
             </div>
         </div>
         <div class="flex">
