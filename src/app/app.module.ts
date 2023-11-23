@@ -15,6 +15,7 @@ import { AdicionaisPizzaComponent } from './adicionais-pizza/adicionais-pizza.co
 import { TapiocasComponent } from './tapiocas/tapiocas.component';
 import { FormsModule } from '@angular/forms';
 import { CompartilharInformacaoPedidoComponent } from './compartilhar-informacao-pedido/compartilhar-informacao-pedido.component';
+import { CompartilhamentoParapagamentoComponent } from './compartilhamento-parapagamento/compartilhamento-parapagamento.component';
 
 @NgModule({
   declarations: [
@@ -30,12 +31,13 @@ import { CompartilharInformacaoPedidoComponent } from './compartilhar-informacao
     AdicionaisPizzaComponent,
     TapiocasComponent,
     CompartilharInformacaoPedidoComponent,
+    CompartilhamentoParapagamentoComponent,
   ],
   exports:[
     FritasComponent,
     PizzasDocesComponent,
-    CompartilharInformacaoPedidoComponent,
-    CardPizzaComponent,
+    CompartilhamentoParapagamentoComponent,
+    FinalizarPedidoComponent
   ],
   imports: [
     BrowserModule,

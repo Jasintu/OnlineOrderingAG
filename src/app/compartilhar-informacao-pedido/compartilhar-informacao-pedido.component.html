@@ -1,14 +1,14 @@
-<div class="container">
+<div class="container" [ngStyle]="{ 'left.%': leftPercentage }">
     <div class="content">
         <div class="listaPedidos">
-            <div class="pedidos"  *ngFor="let pizza of PizzaRecebidaPreco">
-                <div class="preço">{{PizzaRecebidaPreco}}R$</div>
-                <p class="nomePedido"> pizza 1X</p>
+            <div class="pedidos">
+                <div class="preço">R$</div>
+                <p class="nomePedido"></p>
                 <i class="material-icons">delete</i>
             </div>
         </div>
         <div class="pedidoTotal">
-            <p class="total">{{valorFinalPedido}}</p>
+            <p class="total">{{valorFinal}}</p>
         </div>
         <div class="formasDePagamento">
             <div class="formas" id="pix" (click)="opcaoPix()" [ngStyle]="{'background-color': minhaCorPix}">

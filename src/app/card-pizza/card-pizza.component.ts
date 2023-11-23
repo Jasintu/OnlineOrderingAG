@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card-pizza',
@@ -41,6 +41,7 @@ export class CardPizzaComponent {
   quantidadeCharqueBarbecue:number = 1
   quantidadeCalabaconBarbecue:number = 1
   quantidadeSolfrita:number = 1
+  changeDetectorRef: any;
   //margherita
   pegarInfoPizza(nomePedido: string, quantidade:number, custo:number){
     this.pizzasComputadasNome = nomePedido
@@ -401,3 +402,5 @@ export class CardPizzaComponent {
     }
     /************************/
 }
+
+

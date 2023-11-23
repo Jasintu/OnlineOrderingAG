@@ -6,8 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  displayPagamento:boolean = true
-  toggleContent() {
-    this.displayPagamento = !this.displayPagamento
-  }
+
 }
