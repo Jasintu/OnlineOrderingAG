@@ -43,7 +43,8 @@ export class CardPizzaComponent {
   //margherita
 
   pegarInfoPizza(nomePedido: string, quantidade:number, preco:number){
-    this.enviarInfos.emit({nome: nomePedido, quantidade: quantidade, preco: preco})
+    let precoFinalpizza:number = quantidade * preco
+    this.enviarInfos.emit({nome: nomePedido, quantidade: quantidade, preco: precoFinalpizza})
   }
   //***********************/
   //Margherita

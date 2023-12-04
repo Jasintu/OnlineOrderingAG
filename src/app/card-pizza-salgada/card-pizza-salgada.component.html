@@ -13,9 +13,9 @@
 <div class="containerAreaDePagamento" [ngStyle]="{'display': isVisible ? 'block' : 'none'}">
     <div class="contentAreaDePagamento">
         <div class="listaPedidos">
-            <div class="pedidos">
-                <div class="preço">R$ {{precoPizza}}</div>
-                <p class="nomePedido">{{nomePizza}} x{{quantidadePizza}}</p>
+            <div class="pedidos" *ngFor="let item of pedido">
+                <div class="preço">R$ {{ item.preco }}</div>
+                <p class="nomePedido">{{ item.nome }} x{{ item.quantidade }}</p>
                 <i class="material-icons">delete</i>
             </div>
         </div>

@@ -14,9 +14,9 @@ export class CardPizzaSalgadaComponent {
 
 //------------------------------------------------- 
 
-minhaCorPix:string = 'white'
-minhaCorCartao:string = 'white'
-minhaCorDinheiro:string = 'white'
+  minhaCorPix:string = 'white'
+  minhaCorCartao:string = 'white'
+  minhaCorDinheiro:string = 'white'
   
   opcaoPix(){
     this.minhaCorPix = 'rgb(43, 42, 42)'
@@ -36,14 +36,17 @@ minhaCorDinheiro:string = 'white'
 
 //------------------------------------------------- 
 
+  pedido:any = [
+    
+  ]
+
+//------------------------------------------------- 
   nomePizza!:string
   quantidadePizza!:number
   precoPizza!:number
 
   handleReceberInfoPizza(pizza: { nome: string, quantidade: number, preco: number }){
-    this.nomePizza = pizza.nome
-    this.quantidadePizza = pizza.quantidade
-    this.precoPizza = pizza.preco
+    this.pedido.push(pizza)
   }
 
 }
