@@ -1,7 +1,7 @@
 <div class="container">
     <div class="content">
         <div>
-            <app-card-pizza></app-card-pizza>
+            <app-card-pizza (enviarInfos)="handleReceberInfoPizza($event)"></app-card-pizza>
             <app-pizzas-doces></app-pizzas-doces>
             <app-fritas></app-fritas>
             <app-cuscuz-gourmet></app-cuscuz-gourmet>
@@ -9,4 +9,32 @@
         </div>
     </div>
 </div>
-<app-adicionais-pizza></app-adicionais-pizza>
+<app-finalizar-pedido id="finalizarPedido" (click)="toggleVisibility()"></app-finalizar-pedido>
+<div class="containerAreaDePagamento" [ngStyle]="{'display': isVisible ? 'block' : 'none'}">
+    <div class="contentAreaDePagamento">
+        <div class="listaPedidos">
+            <div class="pedidos">
+                <div class="preço">R$ {{precoPizza}}</div>
+                <p class="nomePedido">{{nomePizza}} x{{quantidadePizza}}</p>
+                <i class="material-icons">delete</i>
+            </div>
+        </div>
+        <div class="pedidoTotal">
+            <p class="total"></p>
+        </div>
+        <div class="formasDePagamento">
+            <div class="formas" id="pix" (click)="opcaoPix()" [ngStyle]="{'background-color': minhaCorPix}">
+                <img src="assets/logos/pix_icon_198027.png" alt=""  draggable="false" >
+            </div>
+            <div class="formas" id="cartao" (click)="opcaoCartao()" [ngStyle]="{'background-color': minhaCorCartao}">
+                <img src="assets/logos/cartaodecredito_icon.png" alt="" id="cartaov2"  draggable="false">
+            </div>
+            <div class="formas" id="dinheiro" (click)="opcaoDinheiro()" [ngStyle]="{'background-color': minhaCorDinheiro}">
+                <img src="assets/logos/png-transparent-computer-icons-bank-money-bank-saving-text-hand-removebg-preview.png" alt="" id="dinheirov2"  draggable="false">
+            </div>
+        </div>
+        <div class="flex">
+            <button id="enviarMsg">Enviar Pedido<img src="assets/logos/imagem_2023-10-25_211407807-removebg-preview.png" alt=""></button>
+        </div>
+    </div>
+</div>

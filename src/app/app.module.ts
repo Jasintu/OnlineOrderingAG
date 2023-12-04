@@ -7,12 +7,12 @@ import { MenuComponent } from './menu/menu.component';
 import { FinalizarPedidoComponent } from './finalizar-pedido/finalizar-pedido.component';
 import { RestaurantMenuComponent } from './restaurant-menu/restaurant-menu.component';
 import { CardPizzaSalgadaComponent } from './card-pizza-salgada/card-pizza-salgada.component';
-import { CardPizzaComponent } from './card-pizza/card-pizza.component';
-import { PizzasDocesComponent } from './pizzas-doces/pizzas-doces.component';
-import { FritasComponent } from './fritas/fritas.component';
-import { CuscuzGourmetComponent } from './cuscuz-gourmet/cuscuz-gourmet.component';
+import { CardPizzaComponent } from './OpcoesDePedido/card-pizza/card-pizza.component';
+import { PizzasDocesComponent } from './OpcoesDePedido/pizzas-doces/pizzas-doces.component';
+import { FritasComponent } from './OpcoesDePedido/fritas/fritas.component';
+import { CuscuzGourmetComponent } from './OpcoesDePedido/cuscuz-gourmet/cuscuz-gourmet.component';
 import { AdicionaisPizzaComponent } from './adicionais-pizza/adicionais-pizza.component';
-import { TapiocasComponent } from './tapiocas/tapiocas.component';
+import { TapiocasComponent } from './OpcoesDePedido/tapiocas/tapiocas.component';
 import { FormsModule } from '@angular/forms';
 import { CompartilharInformacaoPedidoComponent } from './compartilhar-informacao-pedido/compartilhar-informacao-pedido.component';
 import { CompartilhamentoParapagamentoComponent } from './compartilhamento-parapagamento/compartilhamento-parapagamento.component';
@@ -37,7 +37,7 @@ import { CompartilhamentoParapagamentoComponent } from './compartilhamento-parap
     FritasComponent,
     PizzasDocesComponent,
     CompartilhamentoParapagamentoComponent,
-    FinalizarPedidoComponent
+    AdicionaisPizzaComponent
   ],
   imports: [
     BrowserModule,

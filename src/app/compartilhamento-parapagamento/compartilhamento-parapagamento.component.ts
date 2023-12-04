@@ -5,20 +5,7 @@ import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/cor
   templateUrl: './compartilhamento-parapagamento.component.html',
   styleUrls: ['./compartilhamento-parapagamento.component.css']
 })
-export class CompartilhamentoParapagamentoComponent implements OnInit, OnChanges{
-  @Input() recebernome!:string
+export class CompartilhamentoParapagamentoComponent{
 
-  listanomePedido: any[] = []
-
-  ngOnInit(): void {
-    
-  }
-
-  ngOnChanges(changes: SimpleChanges): void {
-    if (changes['recebernome'].currentValue !== undefined && changes['recebernome'].currentValue !== null) {
-      this.listanomePedido.push(this.recebernome)
-      console.log(this.listanomePedido)
-    }
-  }
 }
 
