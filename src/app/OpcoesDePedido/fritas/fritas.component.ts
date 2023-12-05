@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-fritas',
@@ -7,16 +7,15 @@ import { Component } from '@angular/core';
 })
 export class FritasComponent{
 
-  fritasComputadasNome!:string
-  fritasComputadasQuantidade:Array <string | number> = []
-  fritasComputadasPreco:Array <string | number> = []
+  @Output() enviarInfos = new EventEmitter<any>()
   quantidadeMediaNormal: number = 1
   quantidadeGrandeNormal: number = 1
   quantidadeMediaGourmet: number = 1
   quantidadeGrandeGourmet: number = 1
 
-  pegarInfoFritas(nomePedido: string, quantidade:number, custo:number){
-    this.fritasComputadasNome = nomePedido
+  pegarInfoFritas(nomePedido: string, quantidade:number, preco:number){
+    let precoFinalBatata:number = quantidade * preco
+    this.enviarInfos.emit({nome: nomePedido, quantidade: quantidade, preco: precoFinalBatata})
   }
 
   //********** Normal Média

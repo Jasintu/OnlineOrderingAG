@@ -6,7 +6,7 @@ import { Component, EventEmitter, Output, OnInit } from '@angular/core';
   styleUrls: ['./card-pizza.component.css']
 })
 export class CardPizzaComponent {
-  @Output() enviarInfos = new EventEmitter<any>();
+  @Output() enviarInfos = new EventEmitter<any>()
   quantidadeMargherita:number = 1
   quantidadeDoisQueijos:number = 1
   quantidadeMussache:number = 1

@@ -3,7 +3,7 @@
         <div>
             <app-card-pizza (enviarInfos)="handleReceberInfoPizza($event)"></app-card-pizza>
             <app-pizzas-doces></app-pizzas-doces>
-            <app-fritas></app-fritas>
+            <app-fritas (enviarInfos)="handleReceberInfoBatataFrita($event)"></app-fritas>
             <app-cuscuz-gourmet></app-cuscuz-gourmet>
             <app-tapiocas></app-tapiocas>
         </div>
@@ -13,14 +13,16 @@
 <div class="containerAreaDePagamento" [ngStyle]="{'display': isVisible ? 'block' : 'none'}">
     <div class="contentAreaDePagamento">
         <div class="listaPedidos">
-            <div class="pedidos" *ngFor="let item of pedido">
-                <div class="preço">R$ {{ item.preco }}</div>
-                <p class="nomePedido">{{ item.nome }} x{{ item.quantidade }}</p>
-                <i class="material-icons">delete</i>
+            <div class="pedidos" *ngFor="let item of pedido; let i = index">
+                <div>
+                    <div class="preço">R$ {{ item.preco }}</div>
+                    <p class="nomePedido">{{ item.nome }} x{{ item.quantidade }}</p>
+                    <i class="material-icons" (click)="removerItem(i)">delete</i>
+                </div>
             </div>
         </div>
         <div class="pedidoTotal">
-            <p class="total"></p>
+            <p class="total">{{calcularSoma()}}R$</p>
         </div>
         <div class="formasDePagamento">
             <div class="formas" id="pix" (click)="opcaoPix()" [ngStyle]="{'background-color': minhaCorPix}">

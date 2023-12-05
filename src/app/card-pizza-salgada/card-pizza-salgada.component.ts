@@ -1,9 +1,8 @@
-import { Component } from '@angular/core';
-
+import { Component, OnChanges, SimpleChanges } from '@angular/core';
 @Component({
   selector: 'app-card-pizza-salgada',
   templateUrl: './card-pizza-salgada.component.html',
-  styleUrls: ['./card-pizza-salgada.component.css']
+  styleUrls: ['./card-pizza-salgada.component.css'],
 })
 export class CardPizzaSalgadaComponent {
   isVisible: boolean = false;
@@ -14,6 +13,13 @@ export class CardPizzaSalgadaComponent {
 
 //------------------------------------------------- 
 
+  removerItem(index: number) {
+    this.pedido.splice(index, 1)
+    this.total.splice(index, 1)
+  }
+
+//------------------------------------------------- 
+ 
   minhaCorPix:string = 'white'
   minhaCorCartao:string = 'white'
   minhaCorDinheiro:string = 'white'
@@ -36,17 +42,24 @@ export class CardPizzaSalgadaComponent {
 
 //------------------------------------------------- 
 
-  pedido:any = [
-    
-  ]
+  pedido:any = []
+
+  total: number[] = []
+
+  calcularSoma(): number {
+    return this.total.reduce((acc, num) => acc + num, 0)
+  }
 
 //------------------------------------------------- 
-  nomePizza!:string
-  quantidadePizza!:number
-  precoPizza!:number
 
   handleReceberInfoPizza(pizza: { nome: string, quantidade: number, preco: number }){
     this.pedido.push(pizza)
+    this.total.push(pizza.preco)
+  }
+  
+  handleReceberInfoBatataFrita(batataFrita: { nome: string, quantidade: number, preco: number }){
+    this.pedido.push(batataFrita)
+    this.total.push(batataFrita.preco)
   }
 
 }
