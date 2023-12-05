@@ -4,7 +4,12 @@ import { Component, OnChanges, SimpleChanges } from '@angular/core';
   templateUrl: './card-pizza-salgada.component.html',
   styleUrls: ['./card-pizza-salgada.component.css'],
 })
-export class CardPizzaSalgadaComponent {
+export class CardPizzaSalgadaComponent implements OnChanges {
+
+  ngOnChanges(changes: SimpleChanges): void {
+
+  }
+
   isVisible: boolean = false;
 
   toggleVisibility() {
@@ -12,8 +17,9 @@ export class CardPizzaSalgadaComponent {
   }
 
 //------------------------------------------------- 
+  animationState = 'visible';
 
-  removerItem(index: number) {
+  removerItem(index: any) {
     this.pedido.splice(index, 1)
     this.total.splice(index, 1)
   }

@@ -174,7 +174,7 @@
 
 .listaPedidos::-webkit-scrollbar {
     width: 0em;
-  }
+}
   
 .listaPedidos::-webkit-scrollbar-thumb {
     background-color: #888;
@@ -223,4 +223,3 @@
     margin-top: 10px;
     margin-bottom: -20px;
 }
-
