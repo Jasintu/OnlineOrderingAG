@@ -7,7 +7,7 @@ import { Component, OnChanges, SimpleChanges } from '@angular/core';
 export class CardPizzaSalgadaComponent implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
-
+    
   }
 
   isVisible: boolean = false;
@@ -20,7 +20,7 @@ export class CardPizzaSalgadaComponent implements OnChanges {
   animationState = 'visible';
 
   removerItem(index: any) {
-    this.pedido.splice(index, 1)
+    this.pedidos.splice(index, 1)
     this.total.splice(index, 1)
   }
 
@@ -48,9 +48,9 @@ export class CardPizzaSalgadaComponent implements OnChanges {
 
 //------------------------------------------------- 
 
-  pedido:any = []
+  pedidos: { nome: string, quantidade: number, preco: number }[] = []
 
-  total: number[] = []
+  total:number[] = []
 
   calcularSoma(): number {
     return this.total.reduce((acc, num) => acc + num, 0)
@@ -58,13 +58,26 @@ export class CardPizzaSalgadaComponent implements OnChanges {
 
 //------------------------------------------------- 
 
+  adicionarPedidoRepetido() {
+    const objetosRepetidos = this.pedidos.filter((objeto, index, self) => {
+      const indicePrimeiraOcorrencia = self.findIndex((el) => el.nome === objeto.nome);
+      const repetido = indicePrimeiraOcorrencia !== index;
+      if (repetido) {
+        console.log(`Objeto repetido encontrado: ${JSON.stringify(objeto)}`);
+      }else{
+        console.log('foi');
+      }
+    });
+  }
+  
   handleReceberInfoPizza(pizza: { nome: string, quantidade: number, preco: number }){
-    this.pedido.push(pizza)
+    this.pedidos.push(pizza)
+    this.adicionarPedidoRepetido()
     this.total.push(pizza.preco)
   }
   
   handleReceberInfoBatataFrita(batataFrita: { nome: string, quantidade: number, preco: number }){
-    this.pedido.push(batataFrita)
+    this.pedidos.push(batataFrita)
     this.total.push(batataFrita.preco)
   }
 

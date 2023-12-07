@@ -13,7 +13,7 @@
 <div class="containerAreaDePagamento" [ngStyle]="{'display': isVisible ? 'block' : 'none'}">
     <div class="contentAreaDePagamento">
         <div class="listaPedidos">
-            <div class="pedidos" *ngFor="let item of pedido; let i = index">
+            <div class="pedidos" *ngFor="let item of pedidos; let i = index">
                 <div>
                     <div class="preço">R$ {{ item.preco }}</div>
                     <p class="nomePedido">{{ item.nome }} x{{ item.quantidade }}</p>
