@@ -14,7 +14,8 @@ export class CardPizzaSalgadaComponent {
 
 //------------------------------------------------- 
 
-  removerItem(index: number) {
+  removerItem(index: any, item:any) {
+    this.total = this.total - item.preco
     this.pedidos.splice(index, 1)
   }
 
@@ -41,7 +42,6 @@ export class CardPizzaSalgadaComponent {
   }
 
 //------------------------------------------------- 
-
   pedidos: { nome: string, quantidade: number, preco: number }[] = []
   total:number = 0 
 //------------------------------------------------- 
@@ -54,18 +54,16 @@ export class CardPizzaSalgadaComponent {
     } else {
       this.pedidos[indiceExistente].preco += pedido.preco
       this.pedidos[indiceExistente].quantidade += pedido.quantidade
-      console.log(this.pedidos[indiceExistente].preco)
+      this.total = this.total + pedido.preco
     }
   }
   
   handleReceberInfoPizza(pizza: { nome: string, quantidade: number, preco: number }) {
     this.adicionarPedidoRepetido(pizza)
   }
-
-
   
   handleReceberInfoBatataFrita(batataFrita: { nome: string, quantidade: number, preco: number }){
-    this.pedidos.push(batataFrita)
+    this.adicionarPedidoRepetido(batataFrita)
   }
 
 }

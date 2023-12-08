@@ -17,7 +17,7 @@
                 <div>
                     <div class="preço">R$ {{ item.preco }}</div>
                     <p class="nomePedido">{{ item.nome }} x{{ item.quantidade }}</p>
-                    <i class="material-icons" (click)="removerItem(i)">delete</i>
+                    <i class="material-icons" (click)="removerItem(i, item)">delete</i>
                 </div>
             </div>
         </div>
