@@ -11,13 +11,13 @@
             <p class="nomeDaPizza">Banana</p>
             <p class="ingredientes">Queijo muçarela, banana, leite condensado, açúcar e canela.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizzaDoce('Pizza de Banana', quantidadeBanana, 23)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarBanana()">+</div>
+                        <div class="quantas">{{quantidadeBanana}}</div>
+                        <div class="menos" (click)="removerBanana()">-</div>
                     </div>
                 </div>
             </div>

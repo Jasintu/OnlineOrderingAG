@@ -2,7 +2,7 @@
     <div class="content">
         <div>
             <app-card-pizza (enviarInfos)="handleReceberInfoPizza($event)"></app-card-pizza>
-            <app-pizzas-doces></app-pizzas-doces>
+            <app-pizzas-doces (enviarInfos)="handleReceberInfoPizzaDoce($event)"></app-pizzas-doces>
             <app-fritas (enviarInfos)="handleReceberInfoBatataFrita($event)"></app-fritas>
             <app-cuscuz-gourmet></app-cuscuz-gourmet>
             <app-tapiocas></app-tapiocas>

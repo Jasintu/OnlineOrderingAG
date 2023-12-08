@@ -36,6 +36,7 @@
     justify-items: center;
     gap: 25px;
     margin-top: 50px;
+    margin-bottom: 40px;
 }
 
 .logoCuscuzGourmet img{
@@ -81,7 +82,7 @@
     background-color: black;
     border-radius: 10px;
     overflow: hidden;
-    margin-right: 50px
+    margin-right: 50px;
 }
 
 .adicionais{

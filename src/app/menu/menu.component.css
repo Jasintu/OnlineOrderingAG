@@ -1,7 +1,3 @@
-*{
-
-}
-
 menu{
     height: 85px;
     width: 100%;
@@ -79,4 +75,14 @@ img{
 #fritas{
     position: absolute;
     top: 4370px;
+}
+
+#cuscuzRecheado{
+    position: absolute;
+    top: 4860px;
+}
+
+#cuscuzGourmet{
+    position: absolute;
+    top: 5440px;
 }

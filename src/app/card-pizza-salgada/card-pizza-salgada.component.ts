@@ -65,5 +65,9 @@ export class CardPizzaSalgadaComponent {
   handleReceberInfoBatataFrita(batataFrita: { nome: string, quantidade: number, preco: number }){
     this.adicionarPedidoRepetido(batataFrita)
   }
+  
+  handleReceberInfoPizzaDoce(pizzaDoce: { nome: string, quantidade: number, preco: number }){
+    this.adicionarPedidoRepetido(pizzaDoce)
+  }
 
 }
