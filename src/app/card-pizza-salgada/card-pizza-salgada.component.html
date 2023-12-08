@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="pedidoTotal">
-            <p class="total">{{calcularSoma()}}R$</p>
+            <p class="total">{{ total }}R$</p>
         </div>
         <div class="formasDePagamento">
             <div class="formas" id="pix" (click)="opcaoPix()" [ngStyle]="{'background-color': minhaCorPix}">
@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="flex">
-            <button id="enviarMsg">Enviar Pedido<img src="assets/logos/imagem_2023-10-25_211407807-removebg-preview.png" alt=""></button>
+            <button id="enviarMsg"><a href="">Enviar Pedido</a><img src="assets/logos/imagem_2023-10-25_211407807-removebg-preview.png" alt=""></button>
         </div>
     </div>
 </div>

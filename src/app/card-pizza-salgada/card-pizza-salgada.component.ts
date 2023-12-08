@@ -4,11 +4,7 @@ import { Component, OnChanges, SimpleChanges } from '@angular/core';
   templateUrl: './card-pizza-salgada.component.html',
   styleUrls: ['./card-pizza-salgada.component.css'],
 })
-export class CardPizzaSalgadaComponent implements OnChanges {
-
-  ngOnChanges(changes: SimpleChanges): void {
-    
-  }
+export class CardPizzaSalgadaComponent {
 
   isVisible: boolean = false;
 
@@ -17,11 +13,9 @@ export class CardPizzaSalgadaComponent implements OnChanges {
   }
 
 //------------------------------------------------- 
-  animationState = 'visible';
 
-  removerItem(index: any) {
+  removerItem(index: number) {
     this.pedidos.splice(index, 1)
-    this.total.splice(index, 1)
   }
 
 //------------------------------------------------- 
@@ -49,36 +43,29 @@ export class CardPizzaSalgadaComponent implements OnChanges {
 //------------------------------------------------- 
 
   pedidos: { nome: string, quantidade: number, preco: number }[] = []
-
-  total:number[] = []
-
-  calcularSoma(): number {
-    return this.total.reduce((acc, num) => acc + num, 0)
-  }
-
+  total:number = 0 
 //------------------------------------------------- 
 
-  adicionarPedidoRepetido() {
-    const objetosRepetidos = this.pedidos.filter((objeto, index, self) => {
-      const indicePrimeiraOcorrencia = self.findIndex((el) => el.nome === objeto.nome);
-      const repetido = indicePrimeiraOcorrencia !== index;
-      if (repetido) {
-        console.log(`Objeto repetido encontrado: ${JSON.stringify(objeto)}`);
-      }else{
-        console.log('foi');
-      }
-    });
+  adicionarPedidoRepetido(pedido: { nome: string, quantidade: number, preco: number }){
+    const indiceExistente = this.pedidos.findIndex(objeto => objeto.nome === pedido.nome)
+    if (indiceExistente === -1) {
+      this.pedidos.push({ ...pedido })
+      this.total = this.total + pedido.preco
+    } else {
+      this.pedidos[indiceExistente].preco += pedido.preco
+      this.pedidos[indiceExistente].quantidade += pedido.quantidade
+      console.log(this.pedidos[indiceExistente].preco)
+    }
   }
   
-  handleReceberInfoPizza(pizza: { nome: string, quantidade: number, preco: number }){
-    this.pedidos.push(pizza)
-    this.adicionarPedidoRepetido()
-    this.total.push(pizza.preco)
+  handleReceberInfoPizza(pizza: { nome: string, quantidade: number, preco: number }) {
+    this.adicionarPedidoRepetido(pizza)
   }
+
+
   
   handleReceberInfoBatataFrita(batataFrita: { nome: string, quantidade: number, preco: number }){
     this.pedidos.push(batataFrita)
-    this.total.push(batataFrita.preco)
   }
 
 }
