@@ -207,6 +207,12 @@
     display: flex;
 }
 
+.flexFixV3{
+    margin-top: 19px;
+    position: absolute;
+    display: flex;
+}
+
 .mais{
     padding-top: 9px;
     text-align: center;

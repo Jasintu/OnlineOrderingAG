@@ -9,7 +9,7 @@
         </div>
     </div>
 </div>
-<app-finalizar-pedido id="finalizarPedido" (click)="toggleVisibility()"></app-finalizar-pedido>
+<app-finalizar-pedido [contagem]="pedidosContados" id="finalizarPedido" (click)="toggleVisibility()"></app-finalizar-pedido>
 <div class="containerAreaDePagamento" [ngStyle]="{'display': isVisible ? 'block' : 'none'}">
     <div class="contentAreaDePagamento">
         <div class="listaPedidos">

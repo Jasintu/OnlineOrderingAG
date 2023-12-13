@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-finalizar-pedido',
@@ -6,6 +6,8 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styleUrls: ['./finalizar-pedido.component.css']
 })
 export class FinalizarPedidoComponent {
+  @Input() contagem?:any
+  
   mudarCorBotao(){
     let materialicons = document.querySelector("#icon") as HTMLElement
     let quantidade = document.querySelector("#quantidade") as HTMLElement
@@ -19,4 +21,5 @@ export class FinalizarPedidoComponent {
     materialicons.style.color = "rgb(192, 188, 188)"
     quantidade.style.scale = "1.0"
   }
+
 }

@@ -17,6 +17,7 @@ export class CardPizzaSalgadaComponent {
   removerItem(index: any, item:any) {
     this.total = this.total - item.preco
     this.pedidos.splice(index, 1)
+    this.pedidosContados = this.pedidosContados - item.quantidade
   }
 
 //------------------------------------------------- 
@@ -44,6 +45,7 @@ export class CardPizzaSalgadaComponent {
 //------------------------------------------------- 
   pedidos: { nome: string, quantidade: number, preco: number }[] = []
   total:number = 0 
+  pedidosContados:number = 0
 //------------------------------------------------- 
 
   adicionarPedidoRepetido(pedido: { nome: string, quantidade: number, preco: number }){
@@ -51,10 +53,12 @@ export class CardPizzaSalgadaComponent {
     if (indiceExistente === -1) {
       this.pedidos.push({ ...pedido })
       this.total = this.total + pedido.preco
+      this.pedidosContados = this.pedidosContados + pedido.quantidade
     } else {
       this.pedidos[indiceExistente].preco += pedido.preco
       this.pedidos[indiceExistente].quantidade += pedido.quantidade
       this.total = this.total + pedido.preco
+      this.pedidosContados = this.pedidosContados + pedido.quantidade
     }
   }
   

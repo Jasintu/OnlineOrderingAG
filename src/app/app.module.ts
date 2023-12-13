@@ -15,8 +15,6 @@ import { CuscuzGourmetComponent } from './OpcoesDePedido/cuscuz-gourmet/cuscuz-g
 import { AdicionaisPizzaComponent } from './adicionais-pizza/adicionais-pizza.component';
 import { TapiocasComponent } from './OpcoesDePedido/tapiocas/tapiocas.component';
 import { FormsModule } from '@angular/forms';
-import { CompartilharInformacaoPedidoComponent } from './compartilhar-informacao-pedido/compartilhar-informacao-pedido.component';
-import { CompartilhamentoParapagamentoComponent } from './compartilhamento-parapagamento/compartilhamento-parapagamento.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +29,9 @@ import { CompartilhamentoParapagamentoComponent } from './compartilhamento-parap
     CuscuzGourmetComponent,
     AdicionaisPizzaComponent,
     TapiocasComponent,
-    CompartilharInformacaoPedidoComponent,
-    CompartilhamentoParapagamentoComponent,
   ],
   exports:[
     PizzasDocesComponent,
-    CompartilhamentoParapagamentoComponent,
     AdicionaisPizzaComponent
   ],
   imports: [
