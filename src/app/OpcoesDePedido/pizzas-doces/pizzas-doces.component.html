@@ -100,17 +100,16 @@
             <p class="nomeDaPizza">m&m</p>
             <p class="ingredientes">Chocolate ao leite e m&m.</p>
             <div class="flexFixV3">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
-                </button>
+                <button class="adicionar" (click)="pegarInfoPizzaDoce('m&m', quantidadeMeM, 30)">Adicionar<i class="material-icons">shopping_cart</i></button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarMeM()">+</div>
+                        <div class="quantas">{{quantidadeMeM}}</div>
+                        <div class="menos" (click)="removerMeM()">-</div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
         <div class="cardPizzaDoce">
             <div class="preço">30$</div>
             <img src="https://media-cdn.tripadvisor.com/media/photo-s/02/cd/b2/e0/brascatta.jpg" alt="">

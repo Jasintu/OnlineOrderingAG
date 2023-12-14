@@ -18,6 +18,7 @@ export class PizzasDocesComponent {
   quantidadeNinhoNutela: number = 1
   quantidadeSensacao: number = 1
   quantidadeOreo: number = 1
+  quantidadeMeM: number = 1
 
   pegarInfoPizzaDoce(nomePedido: string, quantidade:number, preco:number){
     let precoFinalBatata:number = quantidade * preco
@@ -162,6 +163,19 @@ export class PizzasDocesComponent {
     this.quantidadeOreo = --this.quantidadeOreo;
     if (this.quantidadeOreo === 0) {
       this.quantidadeOreo = 1;
+    }
+  }
+  
+  // adicionar quantidadeMeM
+  
+  adicionarMeM() {
+    this.quantidadeMeM = ++this.quantidadeMeM
+  }
+
+  removerMeM() {
+    this.quantidadeMeM = --this.quantidadeMeM
+    if (this.quantidadeMeM === 0) {
+      this.quantidadeMeM = 1;
     }
   }
 }
