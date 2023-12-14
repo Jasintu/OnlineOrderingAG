@@ -28,13 +28,13 @@
             <p class="nomeDaPizza">Romeu e Julieta</p>
             <p class="ingredientes">Queijo muçarela, creme de goiabada e creme de leite.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizzaDoce('Pizza Romeu e Julieta', quantidadeRomeueJulieta, 23)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarRomeueJulieta()">+</div>
+                        <div class="quantas">{{quantidadeRomeueJulieta}}</div>
+                        <div class="menos" (click)="removerRomeueJulieta()">-</div>
                     </div>
                 </div>
             </div>
@@ -45,13 +45,13 @@
             <p class="nomeDaPizza">Brigadeiro</p>
             <p class="ingredientes">Chocolate ao leite e chocolate granulado.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizzaDoce('Pizza de Brigadeiro', quantidadeBrigadeiro, 25)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarBrigadeiro()">+</div>
+                        <div class="quantas">{{quantidadeBrigadeiro}}</div>
+                        <div class="menos" (click)="removerBrigadeiro()">-</div>
                     </div>
                 </div>
             </div>
@@ -62,13 +62,13 @@
             <p class="nomeDaPizza">Prestígio</p>
             <p class="ingredientes">Chocolate ao leite e coco ralado.</p>
             <div class="flexFixV3">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizzaDoce('Pizza de Prestígio', quantidadePrestigio, 25)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarPrestigio()">+</div>
+                        <div class="quantas">{{quantidadePrestigio}}</div>
+                        <div class="menos" (click)="removerPrestigio()">-</div>
                     </div>
                 </div>
             </div>
@@ -83,13 +83,13 @@
             <p class="nomeDaPizza">Doce Ninho</p>
             <p class="ingredientes">Queijo muçarela, banana, leite condensado, açúcar e canela.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
+                <button class="adicionar" (click)="pegarInfoPizzaDoce('Pizza de Doce Ninho', quantidadeDoceNinho, 25)">Adicionar<i class="material-icons">shopping_cart</i>
                 </button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarDoceNinho()">+</div>
+                        <div class="quantas">{{quantidadeDoceNinho}}</div>
+                        <div class="menos" (click)="removerDoceNinho()">-</div>
                     </div>
                 </div>
             </div>
@@ -114,37 +114,37 @@
         <div class="cardPizzaDoce">
             <div class="preço">30$</div>
             <img src="https://media-cdn.tripadvisor.com/media/photo-s/02/cd/b2/e0/brascatta.jpg" alt="">
-            <p class="nomeDaPizza">Floresta negra</p>
+            <p class="nomeDaPizza">Floresta Negra</p>
             <p class="ingredientes">Chocolate ao leite, chocolate granulado e cereja.</p>
             <div class="flexFix">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
-                </button>
-                <div class="quantidade">
-                    <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
-                    </div>
+              <button class="adicionar" (click)="pegarInfoPizzaDoce('Floresta Negra', quantidadeFlorestaNegra, 30)">Adicionar
+                <i class="material-icons">shopping_cart</i>
+              </button>
+              <div class="quantidade">
+                <div class="quantidadeContent">
+                  <div class="mais" (click)="adicionarFlorestaNegra()">+</div>
+                  <div class="quantas">{{quantidadeFlorestaNegra}}</div>
+                  <div class="menos" (click)="removerFlorestaNegra()">-</div>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="cardPizzaDoce">
+          </div>
+          <div class="cardPizzaDoce">
             <div class="preço">30$</div>
             <img src="https://blog.novasafra.com.br/wp-content/uploads/2021/07/cid_108835493896299801747246.jpg" alt="">
             <p class="nomeDaPizza">Kit Kat</p>
             <p class="ingredientes">Creme de kitkat e kitkat.</p>
             <div class="flexFixV3">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
-                </button>
+                <button class="adicionar" (click)="pegarInfoPizzaDoce('Kit Kat', quantidadeKitKat, 30)">Adicionar<i class="material-icons">shopping_cart</i></button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarKitKat()">+</div>
+                        <div class="quantas">{{quantidadeKitKat}}</div>
+                        <div class="menos" (click)="removerKitKat()">-</div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
     </div>
 </div>
 <div class="container">
@@ -153,69 +153,65 @@
             <div class="preço">30$</div>
             <img src="https://i.pinimg.com/736x/5a/63/af/5a63af587f56432fc7f9a8d4db550a49--nutella-pizza-chocolate-pizza.jpg" alt="">
             <p class="nomeDaPizza">Nutella</p>
-            <p class="ingredientes">nutela e marshmellow.</p>
+            <p class="ingredientes">Nutella e marshmallow.</p>
             <div class="flexFixV3">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
-                </button>
+                <button class="adicionar" (click)="pegarInfoPizzaDoce('Nutella', quantidadeNutella, 30)">Adicionar<i class="material-icons">shopping_cart</i></button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarNutella()">+</div>
+                        <div class="quantas">{{quantidadeNutella}}</div>
+                        <div class="menos" (click)="removerNutella()">-</div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
         <div class="cardPizzaDoce">
             <div class="preço">30$</div>
             <img src="https://www.guiadasemana.com.br/contentFiles/system/pictures/2013/6/79953/original/pizza-mms-pizza-hut.jpg" alt="">
             <p class="nomeDaPizza">Ninho c/ Nutela</p>
-            <p class="ingredientes">nutela e leite ninho.</p>
+            <p class="ingredientes">Nutella e leite Ninho.</p>
             <div class="flexFixV3">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
-                </button>
+                <button class="adicionar" (click)="pegarInfoPizzaDoce('Ninho c/ Nutela', quantidadeNinhoNutela, 30)">Adicionar<i class="material-icons">shopping_cart</i></button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarNinhoNutela()">+</div>
+                        <div class="quantas">{{quantidadeNinhoNutela}}</div>
+                        <div class="menos" (click)="removerNinhoNutela()">-</div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
         <div class="cardPizzaDoce">
             <div class="preço">30$</div>
             <img src="https://oquetempracomer.com.br/wp-content/uploads/2022/02/pizza-chocolate-com-morango-capa.jpg" alt="">
             <p class="nomeDaPizza">Sensação</p>
             <p class="ingredientes">Chocolate ao leite, chocolate granulado e cereja.</p>
             <div class="flex">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
-                </button>
+                <button class="adicionar" (click)="pegarInfoPizzaDoce('Sensação', quantidadeSensacao, 30)">Adicionar<i class="material-icons">shopping_cart</i></button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarSensacao()">+</div>
+                        <div class="quantas">{{quantidadeSensacao}}</div>
+                        <div class="menos" (click)="removerSensacao()">-</div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
         <div class="cardPizzaDoce">
             <div class="preço">30$</div>
             <img src="https://images.circolare.com.br/uploads/2020/05/Captura-de-Tela-2020-05-26-%C3%A0s-16.44.18-e1590522659351.png" alt="">
             <p class="nomeDaPizza">Óreo</p>
-            <p class="ingredientes">Creme de Laka e òreo.</p>
+            <p class="ingredientes">Creme de Laka e Óreo.</p>
             <div class="flexFixV3">
-                <button class="adicionar">Adicionar<i class="material-icons">shopping_cart</i>
-                </button>
+                <button class="adicionar" (click)="pegarInfoPizzaDoce('Óreo', quantidadeOreo, 30)">Adicionar<i class="material-icons">shopping_cart</i></button>
                 <div class="quantidade">
                     <div class="quantidadeContent">
-                        <div class="mais">+</div>
-                        <div class="quantas">1</div>
-                        <div class="menos">-</div>
+                        <div class="mais" (click)="adicionarOreo()">+</div>
+                        <div class="quantas">{{quantidadeOreo}}</div>
+                        <div class="menos" (click)="removerOreo()">-</div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>        
     </div>
 </div>
