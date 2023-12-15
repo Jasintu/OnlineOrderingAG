@@ -208,14 +208,6 @@
     margin-bottom: -35px;
 }
 
-@keyframes intro {
-    from{
-        scale: 0.1;
-    }to{
-        scale: 1.0;
-    }
-}
-
 .pedidoTotal{
     text-align: center;
     color: aliceblue;

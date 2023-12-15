@@ -76,53 +76,50 @@ export class CardPizzaSalgadaComponent {
 
 // funcao enviar pedido
 
+  pizzaComputadas:string = `
+  **Pedido de Pizza**
 
+  **Nome do Cliente:** [Seu Nome]
+  **Número de Contato:** [Seu Número de Telefone]
 
+  **Itens do Pedido:**
+  1. **Prestígio**
+    - Quantidade: [Quantidade]
+    - Preço: $[Preço Total]
 
-pizzaComputadas:string = `
-**Pedido de Pizza**
+  2. **Kit Kat**
+    - Quantidade: [Quantidade]
+    - Preço: $[Preço Total]
 
-**Nome do Cliente:** [Seu Nome]
-**Número de Contato:** [Seu Número de Telefone]
+  3. **Nutella**
+    - Quantidade: [Quantidade]
+    - Preço: $[Preço Total]
 
-**Itens do Pedido:**
-1. **Prestígio**
-   - Quantidade: [Quantidade]
-   - Preço: $[Preço Total]
+  4. **Ninho c/ Nutela**
+    - Quantidade: [Quantidade]
+    - Preço: $[Preço Total]
 
-2. **Kit Kat**
-   - Quantidade: [Quantidade]
-   - Preço: $[Preço Total]
+  5. **Sensação**
+    - Quantidade: [Quantidade]
+    - Preço: $[Preço Total]
 
-3. **Nutella**
-   - Quantidade: [Quantidade]
-   - Preço: $[Preço Total]
+  6. **Óreo**
+    - Quantidade: [Quantidade]
+    - Preço: $[Preço Total]
 
-4. **Ninho c/ Nutela**
-   - Quantidade: [Quantidade]
-   - Preço: $[Preço Total]
+  7. **m&m**
+    - Quantidade: [Quantidade]
+    - Preço: $[Preço Total]
 
-5. **Sensação**
-   - Quantidade: [Quantidade]
-   - Preço: $[Preço Total]
+  **Total do Pedido:** $[Total Geral]
 
-6. **Óreo**
-   - Quantidade: [Quantidade]
-   - Preço: $[Preço Total]
+  **Observações Adicionais:**
+  [Observações adicionais, se houver]
 
-7. **m&m**
-   - Quantidade: [Quantidade]
-   - Preço: $[Preço Total]
+  Por favor, entre em contato para confirmar o pedido. Obrigado!
+  `
 
-**Total do Pedido:** $[Total Geral]
-
-**Observações Adicionais:**
-[Observações adicionais, se houver]
-
-Por favor, entre em contato para confirmar o pedido. Obrigado!
-`
-
-linkDinamico!:string
+  linkDinamico!:string
 
   enviarPedido(){
     const mensagemPedido = `https://wa.me/5587981051712?text=Negros%20${this.pizzaComputadas}%20topo`
