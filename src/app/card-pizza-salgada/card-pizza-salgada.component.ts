@@ -75,11 +75,12 @@ export class CardPizzaSalgadaComponent {
   }
 
 // funcao enviar pedido
+  nomeCliente:string = "Henrique Antonio"
 
   pizzaComputadas:string = `
   **Pedido de Pizza**
 
-  **Nome do Cliente:** [Seu Nome]
+  **Nome do Cliente:** ${this.nomeCliente}
   **Número de Contato:** [Seu Número de Telefone]
 
   **Itens do Pedido:**
