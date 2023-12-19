@@ -126,5 +126,4 @@ export class CardPizzaSalgadaComponent {
     const mensagemPedido = `https://wa.me/5587981051712?text=Negros%20${this.pizzaComputadas}%20topo`
     this.linkDinamico = mensagemPedido
   }
-
 }
