@@ -53,7 +53,7 @@
 
 .contentAreaDePagamento{
     width: 500px;
-    height: 500px;
+    height: 700px;
     background-color: rgb(0, 0, 0);
     position: fixed;
     top: 50%;
@@ -166,7 +166,7 @@
 }
 
 .listaPedidos{
-    height: 220px;
+    height: 300px;
     overflow: auto;
     border-bottom: 1px solid white;
     overflow-y: auto;
@@ -219,4 +219,18 @@
 a{
     text-decoration: none;
     color: aliceblue;
+}
+
+#nomeCliente{
+    width: 300px;
+    height: 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#endereco{
+    width: 350px;
+    height: 25px;
+    border-radius: 10px;
+    margin-top: 20px;
 }

@@ -36,7 +36,15 @@
             </div>
         </div>
         <div class="flex">
-            <button id="enviarMsg" (click)="enviarPedido()"><a [attr.href]="linkDinamico">Enviar Pedido</a><img src="assets/logos/imagem_2023-10-25_211407807-removebg-preview.png" alt=""></button>
+            <button id="enviarMsg" (click)="enviarPedido()"><a [attr.href]="linkDinamico" target="_blank">Enviar Pedido</a><img src="assets/logos/imagem_2023-10-25_211407807-removebg-preview.png" alt=""></button>
+        </div>
+        <div class="flex">
+            <p style="color: white; margin-top: 25px; margin-right: 4px;">NOME CLIENTE : </p>
+            <input type="text" id="nomeCliente">
+        </div>
+        <div class="flex">
+            <p style="color: white; margin-top: 25px; margin-right: 4px;">ENDEREÇO : </p>
+            <input type="text" id="endereco">
         </div>
     </div>
 </div>

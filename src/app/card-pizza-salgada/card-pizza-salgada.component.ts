@@ -76,54 +76,31 @@ export class CardPizzaSalgadaComponent {
 
 // funcao enviar pedido
   nomeCliente:string = "Henrique Antonio"
-
+  endereco:string = "Rua Gonzaguinha n100° Por trás do caps ao lado de roni que conserta som"
   pizzaComputadas:string = `
-  **Pedido de Pizza**
+  🍕 Pedido Confirmado! 🍕
 
-  **Nome do Cliente:** ${this.nomeCliente}
-  **Número de Contato:** [Seu Número de Telefone]
+  Olá ${this.nomeCliente}! Seu pedido foi recebido e está sendo preparado. Aqui estão os detalhes:
 
-  **Itens do Pedido:**
-  1. **Prestígio**
-    - Quantidade: [Quantidade]
-    - Preço: $[Preço Total]
+  📋 **Detalhes do Pedido:**
+  - Pizza Doce: [Sabor da Pizza Doce]
+  - Batata Frita: [Quantidade] porção(s)
+  - Bebidas: [Lista de Bebidas]
+  - Tapiocas: [Quantidade] tapioca(s) de [Sabor da Tapioca]
 
-  2. **Kit Kat**
-    - Quantidade: [Quantidade]
-    - Preço: $[Preço Total]
+  📍 **Endereço de Entrega:**
+  ${this.endereco}
 
-  3. **Nutella**
-    - Quantidade: [Quantidade]
-    - Preço: $[Preço Total]
+  Fique de olho no seu celular, nossa equipe está a caminho! Se precisar de algo extra ou tiver instruções especiais, nos avise.
 
-  4. **Ninho c/ Nutela**
-    - Quantidade: [Quantidade]
-    - Preço: $[Preço Total]
-
-  5. **Sensação**
-    - Quantidade: [Quantidade]
-    - Preço: $[Preço Total]
-
-  6. **Óreo**
-    - Quantidade: [Quantidade]
-    - Preço: $[Preço Total]
-
-  7. **m&m**
-    - Quantidade: [Quantidade]
-    - Preço: $[Preço Total]
-
-  **Total do Pedido:** $[Total Geral]
-
-  **Observações Adicionais:**
-  [Observações adicionais, se houver]
-
-  Por favor, entre em contato para confirmar o pedido. Obrigado!
+  Agradecemos pela preferência! Bom apetite! 🚀🍽️
   `
-
-  linkDinamico!:string
-
+  mensagemFormatada = encodeURIComponent(this.pizzaComputadas);
+  
   enviarPedido(){
-    const mensagemPedido = `https://wa.me/5587981051712?text=Negros%20${this.pizzaComputadas}%20topo`
+    const mensagemPedido = `https://wa.me/5587981051712?text=${this.mensagemFormatada}`
     this.linkDinamico = mensagemPedido
   }
+
+  linkDinamico!:string
 }
